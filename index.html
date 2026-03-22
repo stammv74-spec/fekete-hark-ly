@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body onclick="playAudio()" style="text-align:center; background:black; color:white;">
+
+<h1>🎵fenyőrigó éneke</h1>
+
+<audio id="audio" autoplay>
+  <source src="fekete-harkály-hangja.mp3" type="audio/mpeg">
+</audio>
+
+<h2>Koppints a hanghoz🔊</h2>
+
+ <h3><p>A fenyőrigó vonuló madarak vékony „tyí” és jellegzetes „sak-sak-sak” hangokat adnak ki.<p>
+   <p>A varjakat dühös kiáltásokkal szidják.<p></h3>
+  
+  <h4><img src="fenyőrigó2-600x300.jpg"><h4>
+    
+<script>
+function playAudio(start) {
+  let audio = document.getElementById("audio");
+  audio.volume = 0.2; // 👉 20%
+  audio.play(1);
+}
+</script>
+
+</body>
+</html>
